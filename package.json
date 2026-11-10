@@ -1,0 +1,64 @@
+{
+  "name": "v2ex-b",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.19.1 <19 || >=20.6.1"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,cjs,ts,json,css,html,md}\"",
+    "lint:script": "eslint .",
+    "lint:style": "stylelint \"src/**/*.css\"",
+    "type-check": "tsc",
+    "test": "vitest",
+    "dev": "cross-env NODE_ENV=development node build.js",
+    "build": "cross-env NODE_ENV=production node build.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.2",
+    "@vue-mini/core": "^1.2.9",
+    "@vue-mini/pinia": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/plugin-transform-runtime": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-typescript": "^7.28.5",
+    "@babel/traverse": "^7.29.0",
+    "@babel/types": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-replace": "^6.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@types/node": "^25.5.2",
+    "@vitest/coverage-v8": "^4.1.2",
+    "babel-plugin-autocomplete-index": "^0.2.0",
+    "babel-plugin-module-resolver": "^5.0.3",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "chokidar": "^5.0.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "fs-extra": "^11.3.4",
+    "globals": "^17.4.0",
+    "kolorist": "^1.8.0",
+    "local-pkg": "^1.1.2",
+    "postcss": "^8.5.8",
+    "postcss-load-config": "^6.0.1",
+    "postcss-pxtorpx-pro": "^2.0.0",
+    "prettier": "^3.8.1",
+    "rollup": "^4.60.1",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0",
+    "terser": "^5.46.1",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.0",
+    "vitest": "^4.1.2"
+  },
+  "browserslist": [
+    "iOS >= 10",
+    "Chrome >= 63"
+  ]
+}
